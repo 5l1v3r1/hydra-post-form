@@ -24,4 +24,4 @@ sleep 0.5;
 echo "[+] Parameter : $parameter";
 sleep 0.5;
 echo "[+] Command : hydra -I $url http-post-form '$path:$parameter:$bad' -l '$user' -P '$pass'";
-hydra -I $url http-post-form "$path:$parameter:$bad" -l "$user" -P "$pass"
+hydra -V -I $url http-post-form "$path:$parameter:$bad" -l "$user" -P "$pass"
